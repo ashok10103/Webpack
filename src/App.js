@@ -2,7 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Users from './containers/users';
 import Item from './containers/item';
+import asyncComponent from './hoc/asyncComponent';
 
+
+const asyncItem = asyncComponent(()=>{
+    return import ('./containers/item.js')
+})
 class App extends React.Component {
 	render() {
 		return (
@@ -13,7 +18,7 @@ class App extends React.Component {
 				</div>
                 <div>
                     <Route path ='/' exact component={Users}/>
-                    <Route path ='/pizza'  component={Item}/>
+                    <Route path ='/pizza'  component={asyncItem}/>
                     
                 </div>
 			</div>
