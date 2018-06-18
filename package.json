@@ -1,0 +1,15 @@
+{
+  "name": "react-webpack-application",
+  "version": "1.0.0",
+  "description": "webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ashok",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.12.0",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
