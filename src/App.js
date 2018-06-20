@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link,Route } from 'react-router-dom';
 import Users from './containers/users';
 import Item from './containers/item';
 import asyncComponent from './hoc/asyncComponent';
@@ -26,4 +26,4 @@ class App extends React.Component {
 	}
 }
 
-export default Users;
+export default App;

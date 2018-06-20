@@ -7,3 +7,5 @@ const itemImage = (props)=>(
         <img src = {PizzaImage} className = {classes.ItemImg} />
     </div>
 )
+
+export default itemImage;
