@@ -43,9 +43,14 @@ module.exports = {
 								})
 							]
 						}
-					}
+					},
 				]
-			}
+            },
+            {
+                test:/\.(png|jpe?g|gif)$/,
+                //set limit of files to 8000 bytes beyond wich file will be saved to folder and will be linked
+                loader:'url-loader?limit=8000&name=images/[name].[ext]'
+            }
 		]
 	}
 };
